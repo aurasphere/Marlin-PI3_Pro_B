@@ -318,7 +318,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define DISABLE_INACTIVE_EXTRUDER true //disable only inactive extruders and keep active extruder enabled
 
 #define INVERT_X_DIR true    // for Mendel set to false, for Orca set to true
-#define INVERT_Y_DIR true    // for Mendel set to true, for Orca set to false
+#define INVERT_Y_DIR false    // for Mendel set to true, for Orca set to false
 #define INVERT_Z_DIR false     // for Mendel set to false, for Orca set to true
 #define INVERT_E0_DIR true   // for direct drive extruder v9 set to true, for geared extruder set to false
 #define INVERT_E1_DIR false    // for direct drive extruder v9 set to true, for geared extruder set to false
@@ -373,8 +373,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
     // set the rectangle in which to probe
     #define LEFT_PROBE_BED_POSITION 30
     #define RIGHT_PROBE_BED_POSITION 200
-    #define BACK_PROBE_BED_POSITION 147
-    #define FRONT_PROBE_BED_POSITION 20
+    #define BACK_PROBE_BED_POSITION 235
+    #define FRONT_PROBE_BED_POSITION 90
 
      // set the number of grid points per dimension
      // I wouldn't see a reason to go above 3 (=9 probing points on the bed)
@@ -398,7 +398,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
   // these are the offsets to the probe relative to the extruder tip (Hotend - Probe)
   // X and Y offsets must be integers
   #define X_PROBE_OFFSET_FROM_EXTRUDER 4
-  #define Y_PROBE_OFFSET_FROM_EXTRUDER -43
+  #define Y_PROBE_OFFSET_FROM_EXTRUDER 43
   #define Z_PROBE_OFFSET_FROM_EXTRUDER -1.4
 
   #define Z_RAISE_BEFORE_HOMING 4       // (in mm) Raise Z before homing (G28) for Probe Clearance.
