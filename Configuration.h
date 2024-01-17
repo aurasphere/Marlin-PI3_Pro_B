@@ -399,7 +399,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
   // X and Y offsets must be integers
   #define X_PROBE_OFFSET_FROM_EXTRUDER 4
   #define Y_PROBE_OFFSET_FROM_EXTRUDER 43
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER -2
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER -1.4
 
   #define Z_RAISE_BEFORE_HOMING 4       // (in mm) Raise Z before homing (G28) for Probe Clearance.
                                         // Be sure you have this distance over your Z_MAX_POS in case
@@ -479,7 +479,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,2560,93}  // MXL, Z M8=1.25, MK8
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,397,93}  // MXL, Z M8=1.25, MK8
 #define DEFAULT_MAX_FEEDRATE          {400, 400, 2, 45}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {5000,5000,50,5000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
